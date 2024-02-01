@@ -20,15 +20,13 @@ class Program
         
         try
         {
-            resultat = int.Parse(s);
-            if(resultat != null)
-            {               
-                return true;
-            }
+           resultat = int.Parse(s);
+           return true;
         }
         
         catch
         {
+            resultat = -1;
             return false;
         } 
     }
